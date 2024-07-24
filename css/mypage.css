@@ -1,0 +1,113 @@
+@import "./global.css";
+
+/*프로필 이미지와 텍스트를 스타일링합니다.*/
+.user-component{
+    padding:20px 10px;
+    flex-direction:column;
+}
+/*프로필 이미지와 텍스트를 스타일링합니다.*/
+.user-component__profile{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}
+/*프로필 이미지와 텍스트를 스타일링합니다.*/
+.user-component__id{
+    padding-top:0.3rem;
+    font-size:1rem;
+}
+/*새 프로필 추가 버튼의 위치 및 스타일을 지정합니다.*/
+.add-profile-btn{
+    background-color:gray;
+    width:70px;
+    height:70px;
+    font-size:4rem;
+    font-weight:100;
+    color:white;
+}
+
+/*사진 크기를 조절합니다.*/
+.continue-watching__imges img{
+    width:200px;
+    height:120px;
+    border-radius:15px;
+    object-fit:cover;
+    /*가로 세로 비율을 유지한 채로 지정한 크기 맞춤*/
+}
+/*사진 여백을 조정합니다.*/
+.continue-watching{
+    margin-bottom:25px;
+    padding: 0 20px;
+    padding-bottom:10px;
+}
+
+/*리스트 스타일을 삭제 후 x축으로 스크롤하게 만듭니다.*/
+.continue-watching__imges{
+    list-style:none; /*리스트 스타일 제거*/
+    display:flex;
+    overflow-x:auto;
+}
+
+/*사진과 텍스트를 감싸는 배경을 만듭니다.*/
+.continue-wathcing__card{
+    background-color:var(--darkpurple);
+    padding:5px;
+    border-radius:15px;
+}
+
+/*이어보기 타이틀과 작품 간의 간격을 조절합니다*/
+.continue-watching__header{
+    margin-bottom:15px;
+}
+.continue-watching__imges li{
+    margin-left:5px;
+}
+
+/*사진과 텍스트 사이의 간격을 조절합니다.*/
+.continue-watching__title{
+    display:block;
+    margin:2px 0;
+}
+
+.wishlist__img{
+    width:60px;
+    height:60px;
+    border-radius:20px;
+}
+.wishlist__header{
+    border-top:1px solid var(--border-color);
+    padding-top:15px;
+    margin-bottom:10px;
+}
+
+.wishlist-item{
+    margin-bottom:0.8rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background-color:var(--darkpurple);
+    padding:7px;
+    border-radius:15px;
+}
+
+.wishlist-info{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    padding-left:20px;
+}
+.wishlist__title{
+    font-size:1.2rem;
+}
+.wishlist__subtitle{
+    font-size:0.9rem;
+}
+.wishlist-play-btn span{
+    background-color:var(--purple);
+    border-radius:50%;
+    opacity:0.9;
+    font-size:3rem;
+}
+.wishlist{
+    padding:0 20px 10px 20px;
+}

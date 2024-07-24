@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+
+@import "./reset.css";
+@import "./variable.css";
+@import "./navigation-bar.css";
+@import "./media-query.css";
+
+body{
+    font-family:"Roboto", sans-serif;
+    background-color:var(--background-purple);
+    color:white;
+}
+
+*{
+    box-sizing:border-box; /*모든 요소를 화면 안에 포함시킴*/
+}
+
+/*input의 기본 설정인 흰 배경의 길쭉한 직사각형을 없애주기 위해서 작성*/
+input{
+    border:none;
+    outline:none;
+    appearance:none;
+}
+
+.display-flex-center{
+    display:flex; /*일직선에 넣고*/
+    justify-content:center; /*가운데 정렬하기*/
+    align-items:center; 
+}
+.position-relative{
+    position:relative;
+}
