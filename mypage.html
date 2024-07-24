@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My page</title>
+    <link rel="stylesheet" href="./css/mypage.css"/>
+</head>
+<body>
+    <div class="display-flex-center"><!--전체를 감싸는 태그의 위치를 가운데로 조정합니다.-->
+        <div class="user-component position-relative display-flex-center"> <!--축이 column임-->
+            <img src="./img/mypage-profile.jpg" class="user-component__profile"/>
+            <div class="user-component__id">서태영</div>
+        </div>
+        <div class="user-component">
+            <div class="user-component__profile add-profile-btn display-flex-center"> 
+                <!--축이 column임-->
+                <!--새 프로필 추가 버튼의 위치 및 스타일을 지정합니다.-->
+                <span>+</span>
+            </div>
+            <div class="user-component__id">새 프로필</div>
+        </div>
+    </div>
+    <div class="continue-watching"> <!--이어보기 전체를 감싸는 div 태그를 작성합니다.-->
+        <p class="continue-watching__header">이어보기</p> <!--타이틀 삽입을 위한 p태그를 작성합니다.-->
+        <ul class="continue-watching__imges"> <!--이어보기 작품 사진과 설명을 감싸는 부모 리스트 태그를 작성합니다.-->
+            <li>
+                <!--작품 사진과 작품 제목을 담는 태그를 작성합니다.-->
+                <div class="continue-watching__card">
+                    <img src="./img/mypage-continueWatch-01.jpg"/>
+                    <span class="continue-watching__title">센과 치히로의 행방불명</span>
+                </div>
+            </li>
+            <!--continue-watching__card의 형식은 같되, 이미지와 텍스트만 변경-->
+            <li>
+                <div class="continue-watching__card">
+                    <img src="./img/mypage-continueWatch-02.jpg"/>
+                    <span class="continue-watching__title">마루 밑 아리에티</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="wishlist">
+        <p class="wishlist__header">내가 찜한 목록</p>
+        <div class="wishlist-container">
+            <div class="wishlist-item">
+                <div>
+                    <img src="./img/mypage-wishlist-01.jpg" class="wishlist__img"/>
+                </div>
+                <div class="wishlist-info">
+                    <span class="wishlist__title">도깨비</span>
+                    <span class="wishlist__subtitle">김고은, 공유 출연</span>
+                </div>
+                <div class="wishlist-play-btn">
+                    <span class="material-icons">
+                        play_arrow
+                    </span>
+                </div>
+            </div>
+            <!--wishlist-item형식의 코드이나 이미지와 텍스트만 변경-->
+            <div class="wishlist-item">
+                <div>
+                    <img src="./img/mypage-wishlist-02.jpg" class="wishlist__img"/>
+                </div>
+                <div class="wishlist-info">
+                    <span class="wishlist__title">오만과 편견</span>
+                    <span class="wishlist__subtitle">황상준 출연</span>
+                </div>
+                <div class="wishlist-play-btn">
+                    <span class="material-icons">
+                        play_arrow
+                    </span>
+                </div>
+            </div>
+            <div class="wishlist-item">
+                <div>
+                    <img src="./img/mypage-wishlist-03.jpg" class="wishlist__img"/>
+                </div>
+                <div class="wishlist-info">
+                    <span class="wishlist__title">편의점 샛별이</span>
+                    <span class="wishlist__subtitle">김유정, 지상욱 출연</span>
+                </div>
+                <div class="wishlist-play-btn">
+                    <span class="material-icons">
+                        play_arrow
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navigation-bar">
+        <a href="find.html">
+            <span class="material-icons-outlined">
+                search
+            </span>
+        </a>
+        <a href="mypage.html">
+            <span class="material-icons">
+                person
+            </span>
+        </a>
+    </div>
+</body>
+</html>
